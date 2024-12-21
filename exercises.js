@@ -1,3 +1,4 @@
+import { join } from "path";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -20,7 +21,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_05();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -39,8 +40,15 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
-
+  let var1 = 17
+  let var2 = 27
+ /* if(var1 > var2){
+    console.log(true);
+  }
+  else {
+    console.log(false);
+  }*/
+  console.log(var1 > var2);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -59,7 +67,9 @@ function exercise_02() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let num = 17
+  let string = "seventeen"
+  console.log(num === string);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -86,7 +96,14 @@ function exercise_03() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let num = 60;
 
+  if(num % 2 === 0){
+    console.log(`Even`);
+  }
+  else {
+    console.log("Odd");
+  }
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -111,6 +128,10 @@ function exercise_04() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let num = 21;
+  if(num >= 10 && num <= 20){
+    console.log("Between 10 and 20");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -135,7 +156,19 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  const placeholder = "Delete this line of code and write your code here"
+  let color = "blue";
+  if(color === "red" || color === "blue"){
+    if(color === "red"){
+      console.log("Color is red");
+    }
+    else{
+      console.log("Color is blue");
+    }
+  }
+  else {
+    console.log("Color is not red or blue")
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
