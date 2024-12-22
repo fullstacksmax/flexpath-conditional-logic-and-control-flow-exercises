@@ -21,7 +21,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_24d();
+  exercise_24();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -653,6 +653,21 @@ function exercise_24() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let day = "Saturday";
+
+  switch (day) {
+    case "Saturday":
+      console.log("Weekend");
+      break;
+    case "Sunday":
+      console.log("Weekend");
+      break;
+    default:
+      console.log("Weekday");
+      break;
+
+  }
+  
   
 
   // CODE IN THE OPEN LINES ABOVE
