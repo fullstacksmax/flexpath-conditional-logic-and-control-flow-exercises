@@ -21,7 +21,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_05();
+  exercise_24d();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -191,6 +191,8 @@ function exercise_06() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let falsy = 0;
+  console.log(!falsy);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -208,7 +210,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let val1 = 17;
+  let val2 = 19;
+  console.log(val1 + val2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +230,9 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let val1 = 17;
+  let val2 = 19;
+  console.log(val1 - val2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -245,6 +251,9 @@ function exercise_09() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let val1 = 10;
+  let val2 = 7;
+  console.log(val1 * val2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -266,7 +275,14 @@ function exercise_10() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
-
+  let val1 = 12;
+  let val2 = 3;
+  if((val1 / val2) % 2 === 0){
+    console.log("Result is even");
+  }
+  else {
+    console.log("Result is odd");
+  }
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -284,8 +300,9 @@ function exercise_11() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
-
+  let val1 = 17;
+  let val2 = 5;
+  console.log(val1 % val2);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -305,7 +322,8 @@ function exercise_12() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  console.log(2 ** 3);
+  console.log(11 ** 3.5);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -327,6 +345,12 @@ function exercise_13() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let val1 = 5;
+  val1++;
+  console.log(val1);
+  val1--;
+  val1--;
+  console.log(val1);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -346,7 +370,12 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+
+  let score = 23;
+  score += 14;
+  console.log(score);
+  score -= 7;
+  console.log(score);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -371,6 +400,11 @@ function exercise_15() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let savings = 505;
+  savings *= 1.08
+  console.log(savings);
+  savings /= .5;
+  console.log(savings);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -390,7 +424,17 @@ function exercise_16() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let newString = "";
 
+  /*if(newString === "") {
+    console.log("An empty string is falsy");
+  }*/
+  
+  
+  if(!newString) {
+    console.log("An empty string is falsy");
+  }
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -411,8 +455,13 @@ function exercise_17() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
-
+  let newString = "false";
+  if(!newString){
+    console.log("the string is falsy");
+  }
+  else {
+    console.log("the string is not falsy");
+  }
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -432,7 +481,9 @@ function exercise_18() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let newObject = {};
+  let secondObject = newObject;
+  console.log(newObject === secondObject);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -452,7 +503,8 @@ function exercise_19() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  console.log(undefined == null);
+  console.log(undefined === null);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -475,6 +527,19 @@ function exercise_20() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  let fruitColor = "red"
+  switch (fruitColor) {
+    case 'red':
+      console.log("Apple")
+      break;
+    case  'yellow':
+      console.log("Banana");
+      break;
+    default:
+      console.log("Unknown fruit");
+      break;
+      
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -497,8 +562,16 @@ function exercise_21() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
-
+  let myNum = 0;
+  if(myNum < 0){
+    console.log("Negative");
+  }
+  else if(myNum > 0) {
+    console.log("Positive");
+  }
+  else {
+    console.log("Zero");
+  }
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -521,7 +594,9 @@ function exercise_22() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let age = 18;
+  let canVote = age >= 18 ? "Yes, can vote" : "No, too young"; 
+  console.log(canVote);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -550,7 +625,14 @@ function exercise_23() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let isProgramMember = true;
+  let age = 66;
+  if(isProgramMember && (age < 14 || age > 65)) {
+    console.log("Eligible for discount");
+  }
+  else {
+    console.log("Not eligible for discount");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -571,6 +653,7 @@ function exercise_24() {
   // CODE IN THE OPEN LINES BELOW
 
   const placeholder = "Delete this line of code and write your code here";
+  
 
   // CODE IN THE OPEN LINES ABOVE
 }
